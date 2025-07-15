@@ -25,5 +25,29 @@ model User {
   role         Role       @default(DOCTOR)
 }
 
+model Consultation {
+  VisitID          Int      @id @default(autoincrement())
+  PatientID        String   @unique @default(uuid())
+  Conversation     String?
+  DigiPrescription String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Patient {
+  id                 Int      @id @default(autoincrement())
+  name               String
+  age                String
+  dietaryPreferences Json?
+  healthGoals        String?
+  allergies          String?
+  conditions         String?
+  keyIssues          String?
+  decisions          String?
+  medications        String?
+  prescriptionText   String?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
 
 

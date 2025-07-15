@@ -130,14 +130,55 @@ exports.Prisma.UserScalarFieldEnum = {
   role: 'role'
 };
 
+exports.Prisma.ConsultationScalarFieldEnum = {
+  VisitID: 'VisitID',
+  PatientID: 'PatientID',
+  Conversation: 'Conversation',
+  DigiPrescription: 'DigiPrescription',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.PatientScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  age: 'age',
+  dietaryPreferences: 'dietaryPreferences',
+  healthGoals: 'healthGoals',
+  allergies: 'allergies',
+  conditions: 'conditions',
+  keyIssues: 'keyIssues',
+  decisions: 'decisions',
+  medications: 'medications',
+  prescriptionText: 'prescriptionText',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
 };
 
+exports.Prisma.NullableJsonNullValueInput = {
+  DbNull: Prisma.DbNull,
+  JsonNull: Prisma.JsonNull
+};
+
 exports.Prisma.QueryMode = {
   default: 'default',
   insensitive: 'insensitive'
+};
+
+exports.Prisma.NullsOrder = {
+  first: 'first',
+  last: 'last'
+};
+
+exports.Prisma.JsonNullValueFilter = {
+  DbNull: Prisma.DbNull,
+  JsonNull: Prisma.JsonNull,
+  AnyNull: Prisma.AnyNull
 };
 exports.Role = exports.$Enums.Role = {
   DOCTOR: 'DOCTOR',
@@ -146,7 +187,9 @@ exports.Role = exports.$Enums.Role = {
 };
 
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  Consultation: 'Consultation',
+  Patient: 'Patient'
 };
 
 /**

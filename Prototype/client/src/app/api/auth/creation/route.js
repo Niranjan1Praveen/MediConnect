@@ -6,7 +6,7 @@ export async function GET(request) {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
   const { searchParams } = new URL(request.url);
-  const userType = searchParams.get('user_type');
+  const userType = searchParams.get("user_type");
 
   if (!user || user == null || !user.id) {
     throw new Error("Something went wrong!");
@@ -25,24 +25,27 @@ export async function GET(request) {
         firstName: user.given_name ?? "",
         lastName: user.family_name ?? "",
         email: user.email ?? "",
-        profileImage: user.picture ?? `https://avatar.vercel.sh/${user.given_name}`,
-        role: userType?.toUpperCase() || 'DOCTOR',
-      }
+        profileImage:
+          user.picture ?? `https://avatar.vercel.sh/${user.given_name}`,
+        role: userType?.toUpperCase() || "DOCTOR",
+      },
     });
   }
 
   let redirectUrl;
-  console.log(userType);
-  
-  switch(userType) {
-    case 'organization':
-      redirectUrl = 'http://localhost:3000/dashboard';
+
+  switch (userType) {
+    case "doctor":
+      redirectUrl = "http://localhost:3000/dashboard";
       break;
-    case 'corporate':
-      redirectUrl = 'http://127.0.0.1:9050/';
+    case "corporate":
+      redirectUrl = "http://127.0.0.1:9050/";
       break;
-    default: 
-      redirectUrl = 'http://localhost:3000/dashboard';
+    case "ngo":
+      redirectUrl = "http://127.0.0.1:8050/";
+      break;
+    default:
+      redirectUrl = "http://localhost:3000/dashboard";
   }
 
   return NextResponse.redirect(redirectUrl);

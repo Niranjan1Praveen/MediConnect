@@ -1,7 +1,8 @@
-'use client'
-
-import { Separator } from "@/components/ui/separator"
-import { Github, Twitter, Mail } from "lucide-react"
+"use client";
+import logo from "@/assets/images/logo.png";
+import { AuroraText } from "@/components/magicui/aurora-text";
+import { Github, Twitter, Mail } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,16 +11,26 @@ export default function Footer() {
         {/* Left Section */}
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-4">
-            <div className="bg-purple-500 rounded-full w-6 h-6" /> {/* Placeholder for logo */}
-            <h1 className="text-xl font-bold">MediConnect</h1>
+            <Image src={logo} alt="footer-logo" className="h-auto w-20" />
+            <p className="text-2xl font-bold text-white/20 md:inline-flex hidden">
+              <AuroraText colors={["#4ade80", "#30f6d5", "#5EF7BA", "#06b6d4"]}>
+                MediConnect
+              </AuroraText>
+            </p>
           </div>
           <p className="text-sm text-gray-400 max-w-xs">
-            Identify and fix slow code—in minutes, not months.
+            Bridging the Healthcare Gap with CSR, NGOs and Doctors
           </p>
           <div className="flex items-center gap-4 mt-6">
-            <a href="#" aria-label="Discord"><span className="text-sm">💬</span></a>
-            <a href="#" aria-label="Twitter"><Twitter size={16} /></a>
-            <a href="#" aria-label="GitHub"><Github size={16} /></a>
+            <a href="#" aria-label="Discord">
+              <span className="text-lg">💬</span>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <Twitter size={18} />
+            </a>
+            <a href="#" aria-label="GitHub">
+              <Github size={18} />
+            </a>
           </div>
         </div>
 
@@ -28,27 +39,38 @@ export default function Footer() {
           <div>
             <h2 className="text-white font-semibold mb-2">Community</h2>
             <ul className="space-y-1 text-gray-400">
-              <li><a href="#">Discord</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Email</a></li>
+              <li>
+                <a href="#">Discord</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Email</a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h2 className="text-white font-semibold mb-2">Legal</h2>
             <ul className="space-y-1 text-gray-400">
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Code Policy</a></li>
+              <li>
+                <a href="#">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Code Policy</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-
       <div className="text-center text-xs text-gray-500">
         Copyright © 2025 Million Software, Inc. All Rights Reserved.
       </div>
     </footer>
-  )
+  );
 }

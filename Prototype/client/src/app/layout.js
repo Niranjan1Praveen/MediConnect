@@ -20,7 +20,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "MediConnect",
-  description: "Mobilizing youth and CSR for water resilience",
+  description: "Bridging the Healthcare Gap with CSR, NGOs & Doctors",
 };
 
 export default function RootLayout({ children }) {
