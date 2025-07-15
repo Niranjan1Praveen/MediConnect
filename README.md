@@ -1,6 +1,8 @@
 
 # MediConnect – Rural Clinics Connected to Urban Care via Smart Telehealth Platform
 
+![Landing Page Preview](./designs/landingPage.png)  
+
 **Hackathon**: Hack4Health  
 **Team Name**: CODE4CHANGE
 
@@ -26,14 +28,6 @@ Rural healthcare in India suffers from a severe shortage of specialists, diagnos
 
 **MediConnect** is a full-stack rural health-tech platform that acts as a digital bridge between villagers and qualified urban healthcare providers. It transforms basic patient data into actionable, AI-guided care flows—teleconsultations, prescriptions, lab referrals, and medicine ordering.
 
-![Landing Page Preview](./designs/landingPage.png)  
-![Documentation Preview](./designs/documentation.png)  
-![Live Conversation Preview](./designs/liveConversation.png)  
-![Digi Prescription Preview](./designs/digiPrescription.png)  
-![Fitness Generator Preview](./designs/fitnessGenerator.png)
-![Report Analyzer Preview](./designs/reportAnalyzer.png)
-![Search Prescription Preview](./designs/searchPrescription.png)
-
 ### Built for low-resource environments:
 
 - Telemedicine consultations  
@@ -49,9 +43,13 @@ Rural healthcare in India suffers from a severe shortage of specialists, diagnos
 ## 🧩 Core Features
 
 ### Real-Time Teleconsultation
+![Live Conversation Preview](./designs/liveConversation.png)  
 Secure video/audio consultations between patients and doctors, coordinated by NGO clinic staff.
 
 ### Minimal-Data e-Prescription Engine
+![Digi Prescription Preview](./designs/digiPrescription.png)
+![Fitness Generator Preview](./designs/fitnessGenerator.png)
+![Search Prescription Preview](./designs/searchPrescription.png)  
 Converts basic symptoms, vitals, and history into structured prescriptions and personalized care plans.
 
 ### Smart Diagnostic Triaging
