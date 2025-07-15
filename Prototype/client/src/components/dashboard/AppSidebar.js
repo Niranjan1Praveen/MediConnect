@@ -16,6 +16,7 @@ import {
   Stethoscope,
   Dumbbell,
   Search,
+  FlaskConical,
 } from "lucide-react";
 import {
   Sidebar,
@@ -75,6 +76,13 @@ const items = [
     url: "/doctor/searchPrescription",
     icon: Search,
     description: "Find prescriptions",
+    badge: null,
+  },
+  {
+    title: "Diagnostic Assistant",
+    url: "/doctor/assistant",
+    icon: FlaskConical,
+    description: "Diagnosis using AI/ML",
     badge: null,
   },
 ];

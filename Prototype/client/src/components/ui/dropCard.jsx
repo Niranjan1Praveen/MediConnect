@@ -55,8 +55,8 @@ const DropCard = ({ item }) => {
         </RegisterLink>
         <ul className="text-md text-white/80 mt-4 space-y-2">
           {item.features?.map((point, i) => (
-            <li key={i} className="flex gap-2 text-[1.1rem]">
-              <span className="text-primary-400">✓</span> {point}
+            <li key={i} className="flex gap-2 text-[1.1rem] items-center">
+              <span className="bg-primary-400 rounded-full w-2 h-2"></span> {point}
             </li>
           ))}
         </ul>

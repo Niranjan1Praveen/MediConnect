@@ -35,7 +35,7 @@ export default function Introduction() {
               Rural diagnosis needs to be voice-first, mobile-ready, and
               AI-assisted.
             </span>{" "}
-            <span className="text-white/15 leading-tight">
+            <span className="text-white/15 leading-snug">
               {words.map((word, index) => {
                 const isVisible = index < currentWord;
                 const shouldHightlight =
@@ -61,8 +61,7 @@ export default function Introduction() {
               })}
             </span>
             <span className="text-primary-400 block mt-3">
-              That’s why we built MediConnect — to enable smart diagnosis
-              without typing.
+              That’s why we built MediConnect!
             </span>
           </div>
         </div>
