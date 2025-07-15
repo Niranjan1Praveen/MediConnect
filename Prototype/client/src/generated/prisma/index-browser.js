@@ -130,125 +130,6 @@ exports.Prisma.UserScalarFieldEnum = {
   role: 'role'
 };
 
-exports.Prisma.EventScalarFieldEnum = {
-  id: 'id',
-  eventName: 'eventName',
-  eventDescription: 'eventDescription',
-  organizerName: 'organizerName',
-  email: 'email',
-  contact: 'contact',
-  eventLocation: 'eventLocation',
-  volunteerCapacity: 'volunteerCapacity',
-  registrationLink: 'registrationLink',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt',
-  userId: 'userId',
-  SkillsRequired: 'SkillsRequired',
-  InternshipRoles: 'InternshipRoles',
-  VolunteerExperience: 'VolunteerExperience'
-};
-
-exports.Prisma.VolunteerScalarFieldEnum = {
-  id: 'id',
-  userId: 'userId',
-  salutation: 'salutation',
-  firstName: 'firstName',
-  lastName: 'lastName',
-  dateOfBirth: 'dateOfBirth',
-  gender: 'gender',
-  homeStreet: 'homeStreet',
-  homeCity: 'homeCity',
-  homeState: 'homeState',
-  postalCode: 'postalCode',
-  homeCountry: 'homeCountry',
-  mobilePhone: 'mobilePhone',
-  employer: 'employer',
-  educationalLevel: 'educationalLevel',
-  maritalStatus: 'maritalStatus',
-  employmentStatus: 'employmentStatus',
-  willingTravelDistance: 'willingTravelDistance',
-  helpInDisaster: 'helpInDisaster',
-  hasDisability: 'hasDisability',
-  skills: 'skills',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
-};
-
-exports.Prisma.CSR_Main_TableScalarFieldEnum = {
-  EventID: 'EventID',
-  ActivityName: 'ActivityName',
-  LocationVillageCity: 'LocationVillageCity',
-  District: 'District',
-  State: 'State',
-  DateOfImplementation: 'DateOfImplementation',
-  NumberOfVolunteers: 'NumberOfVolunteers',
-  CorporateSponsor: 'CorporateSponsor',
-  NGOPartner: 'NGOPartner',
-  VolunteerHoursLogged: 'VolunteerHoursLogged',
-  GenderDistribution: 'GenderDistribution',
-  CommunityBeneficiaries: 'CommunityBeneficiaries',
-  CSRBudgetAllocated: 'CSRBudgetAllocated',
-  CSRBudgetUtilized: 'CSRBudgetUtilized',
-  VolunteerFeedbackScore: 'VolunteerFeedbackScore',
-  CommunitySatisfactionScore: 'CommunitySatisfactionScore',
-  RemarksChallenges: 'RemarksChallenges'
-};
-
-exports.Prisma.VeltrixGlobalSolutionsScalarFieldEnum = {
-  EventID: 'EventID',
-  HouseholdsCovered: 'HouseholdsCovered',
-  AwarenessKitsDistributed: 'AwarenessKitsDistributed',
-  MockDrillsConducted: 'MockDrillsConducted',
-  EarlyWarningSystemInstalled: 'EarlyWarningSystemInstalled',
-  LocalAuthorityCollaboration: 'LocalAuthorityCollaboration'
-};
-
-exports.Prisma.NoventraTechnologiesIncScalarFieldEnum = {
-  EventID: 'EventID',
-  AreaRestoredSqM: 'AreaRestoredSqM',
-  NativeFloraPlanted: 'NativeFloraPlanted',
-  WasteRemovedKg: 'WasteRemovedKg',
-  BiodiversitySpeciesCount: 'BiodiversitySpeciesCount',
-  WaterQualityImprovementScore: 'WaterQualityImprovementScore'
-};
-
-exports.Prisma.AureviaInternationalHoldingsScalarFieldEnum = {
-  EventID: 'EventID',
-  TreesPlanted: 'TreesPlanted',
-  SaplingSurvivalRatePercent: 'SaplingSurvivalRatePercent',
-  SpeciesDiversityCount: 'SpeciesDiversityCount',
-  GeoTaggingEnabled: 'GeoTaggingEnabled',
-  PostPlantationCareProvided: 'PostPlantationCareProvided'
-};
-
-exports.Prisma.ZentaraDynamicsCorporationScalarFieldEnum = {
-  EventID: 'EventID',
-  TreesPlanted: 'TreesPlanted',
-  SaplingSurvivalRatePercent: 'SaplingSurvivalRatePercent',
-  SpeciesDiversityCount: 'SpeciesDiversityCount',
-  GeoTaggingEnabled: 'GeoTaggingEnabled',
-  PostPlantationCareProvided: 'PostPlantationCareProvided'
-};
-
-exports.Prisma.TrionyxSystemsWorldwideScalarFieldEnum = {
-  EventID: 'EventID',
-  TankersSupplied: 'TankersSupplied',
-  WaterDeliveredLiters: 'WaterDeliveredLiters',
-  HouseholdsReached: 'HouseholdsReached',
-  WaterDistributionPoints: 'WaterDistributionPoints',
-  HygieneKitsDistributed: 'HygieneKitsDistributed'
-};
-
-exports.Prisma.InboxScalarFieldEnum = {
-  id: 'id',
-  eventId: 'eventId',
-  eventName: 'eventName',
-  eventDescription: 'eventDescription',
-  organizerName: 'organizerName',
-  status: 'status',
-  createdAt: 'createdAt'
-};
-
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -258,28 +139,14 @@ exports.Prisma.QueryMode = {
   default: 'default',
   insensitive: 'insensitive'
 };
-
-exports.Prisma.NullsOrder = {
-  first: 'first',
-  last: 'last'
-};
 exports.Role = exports.$Enums.Role = {
-  VOLUNTEER: 'VOLUNTEER',
-  ORGANIZATION: 'ORGANIZATION',
+  DOCTOR: 'DOCTOR',
+  NGO: 'NGO',
   CORPORATE: 'CORPORATE'
 };
 
 exports.Prisma.ModelName = {
-  User: 'User',
-  Event: 'Event',
-  Volunteer: 'Volunteer',
-  CSR_Main_Table: 'CSR_Main_Table',
-  VeltrixGlobalSolutions: 'VeltrixGlobalSolutions',
-  NoventraTechnologiesInc: 'NoventraTechnologiesInc',
-  AureviaInternationalHoldings: 'AureviaInternationalHoldings',
-  ZentaraDynamicsCorporation: 'ZentaraDynamicsCorporation',
-  TrionyxSystemsWorldwide: 'TrionyxSystemsWorldwide',
-  Inbox: 'Inbox'
+  User: 'User'
 };
 
 /**

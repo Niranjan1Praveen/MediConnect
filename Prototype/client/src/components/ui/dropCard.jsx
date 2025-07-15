@@ -9,12 +9,12 @@ const DropCard = ({ item }) => {
     switch(item.title) {
       case "Volunteer":
         return {
-          url: "/api/auth/creation?user_type=volunteer",
+          url: "/api/auth/creation?user_type=doctor",
           text: "Register as Volunteer"
         };
       case "NGO / Organization":
         return {
-          url: "/api/auth/creation?user_type=organization",
+          url: "/api/auth/creation?user_type=ngo",
           text: "Register as Organization"
         };
       case "Corporates":
@@ -35,7 +35,8 @@ const DropCard = ({ item }) => {
   return (
     <Card className={"bg-transparent border-0"}>
       <div className="flex flex-col space-y-4 text-white p-4">
-        <h2 className="text-primary-400 text-3xl font-bold">{item.cta}/<span className="text-xl text-white">{item.catchPhrase}</span></h2>
+        {/* <h2 className="text-primary-400 text-3xl font-bold">{item.cta}/<span className="text-xl text-white">{item.catchPhrase}</span></h2> */}
+        <h2 className="text-primary-400 text-3xl font-bold">{item.cta}</h2>
         <img
           src={item?.img ?? ""}
           className="w-full h-[300px] rounded-md"

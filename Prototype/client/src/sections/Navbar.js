@@ -19,15 +19,15 @@ export default function Navbar() {
     <>
       <section className="py-4 px-4 lg:py-8 flex items-center justify-center fixed w-full top-0 z-100">
         <div className="container max-w-5xl">
-          <div className="rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
+          <div className="rounded-[27px] md:rounded-full backdrop-blur">
             <div className="grid grid-cols-2 lg:grid-cols-3 p-2 items-center px-4 md:pr-2">
-              <div className="flex items-center">
-                <Image src={logo} alt="Logo Icon" className="h-10 w-12" />
+              <div className="flex items-center gap-1">
+                <Image src={logo} alt="Logo Icon" className="h-auto w-10" />
                 <p className="text-2xl font-bold text-white/20 md:inline-flex hidden">
                   <AuroraText
                     colors={["#4ade80", "#30f6d5", "#5EF7BA", "#06b6d4"]}
                   >
-                    DropConnect
+                    MediConnect
                   </AuroraText>
                 </p>
               </div>

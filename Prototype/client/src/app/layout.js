@@ -19,7 +19,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "DropConnect",
+  title: "MediConnect",
   description: "Mobilizing youth and CSR for water resilience",
 };
 

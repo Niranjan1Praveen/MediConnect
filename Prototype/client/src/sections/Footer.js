@@ -1,55 +1,54 @@
-import Image from "next/image";
-import Link from "next/link";
-import logo from "@/assets/images/logo.png";
-import { AuroraText } from "@/components/magicui/aurora-text";
+'use client'
 
-const footerLinks = [
-  { href: "#", label: "Contact" },
-  { href: "#", label: "Privacy Policy" },
-  { href: "#", label: "Terms & Conditions" },
-];
+import { Separator } from "@/components/ui/separator"
+import { Github, Twitter, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
-    <section className="py-10 px-4 flex items-center justify-center">
-      <footer className="container flex flex-col md:flex-row md:justify-between items-center gap-6">
-        <div className="flex flex-col gap-2 items-center text-center md:items-start">
-          <div className="flex items-center">
-            <Image src={logo} alt="Logo Icon" className="h-auto w-20" />
-            <p className="text-2xl font-bold text-white/20 md:inline-flex hidden">
-              <AuroraText colors={["#4ade80", "#30f6d5", "#5EF7BA", "#06b6d4"]}>
-                DropConnect
-              </AuroraText>
-            </p>
+    <footer className="text-white py-10 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
+        {/* Left Section */}
+        <div className="flex-1">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="bg-purple-500 rounded-full w-6 h-6" /> {/* Placeholder for logo */}
+            <h1 className="text-xl font-bold">MediConnect</h1>
           </div>
-          <small className="text-white/50">
-            Built by{" "}
-            <Link href={"/"} className="uppercase">
-              code4change
-            </Link>
-            . The source code is available on{" "}
-            <Link
-              href={
-                "https://github.com/Niranjan1Praveen/DropConnect-Development"
-              }
-              className="underline italic"
-            >
-              GitHub.
-            </Link>
-          </small>
+          <p className="text-sm text-gray-400 max-w-xs">
+            Identify and fix slow code—in minutes, not months.
+          </p>
+          <div className="flex items-center gap-4 mt-6">
+            <a href="#" aria-label="Discord"><span className="text-sm">💬</span></a>
+            <a href="#" aria-label="Twitter"><Twitter size={16} /></a>
+            <a href="#" aria-label="GitHub"><Github size={16} /></a>
+          </div>
         </div>
-        <nav className="flex gap-6">
-          {footerLinks.map((link) => (
-            <a
-              href={link.href}
-              key={link.label}
-              className="text-white/50 text-sm"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
-      </footer>
-    </section>
-  );
+
+        {/* Right Section */}
+        <div className="flex flex-1 justify-between gap-10 text-sm">
+          <div>
+            <h2 className="text-white font-semibold mb-2">Community</h2>
+            <ul className="space-y-1 text-gray-400">
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-white font-semibold mb-2">Legal</h2>
+            <ul className="space-y-1 text-gray-400">
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Code Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="text-center text-xs text-gray-500">
+        Copyright © 2025 Million Software, Inc. All Rights Reserved.
+      </div>
+    </footer>
+  )
 }
