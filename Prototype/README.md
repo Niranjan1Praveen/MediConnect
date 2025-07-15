@@ -1,151 +1,178 @@
-# DropConnect
 
-**A Smart Platform for Water Resilience Volunteering & CSR Impact**
+# MediConnect – Rural Clinics Connected to Urban Care via Smart Telehealth Platform
 
-> *To build resilience, we need coordinated disaster risk reduction strategies, including strong water governance, early warning systems, and sustainable, climate-resilient infrastructure at all levels.*  
-> — *UN SDG Framework*
+**Hackathon**: Hack4Health  
+**Team Name**: CODE4CHANGE
 
----
+## Team Members
 
-## Overview
+- Vaibhav Jain (Team Leader)  
+- Abhishek Chaubhey  
+- Debshata Choudhury  
+- Niranjan Praveen  
 
-**DropConnect** is a digital platform that unites students, NGOs, and corporations to foster collective action for water resilience and climate-smart disaster management. Anchored in India’s Schedule VII CSR mandate, DropConnect empowers verified impact creation through:
-
-- **Volunteer mobilization for water-centric initiatives** (like clean-up drives, rainwater harvesting, awareness campaigns).
-- **Geo-based event matching** for students and community members.
-- **Corporate dashboards** to monitor CSR, ESG, and BRSR-aligned outcomes.
-- **Gamified rewards** to incentivize meaningful participation.
+**Contact**: vaibavjain62@gmail.com  
+**Live Demo**: *[Link to be added]*
 
 ---
 
-## Key Features
+## 🚀 Problem Statement
 
-- 🎯 **NGO Event Listings:** Schedule and manage local water resilience events with roles, dates, and geo-tags.
-- 🔍 **Smart Matching:** AI/ML-based engine aligns volunteers by region, interest, and skill.
-- 📈 **Impact Dashboards for Corporates:** Track hours volunteered, trees planted, water conserved, and auto-generate reports for compliance.
-- 🏆 **Student Incentives:** Points unlock internships, mentorships, leadership badges like *Green Champion*.
-- 📲 **Real-time Participation:** QR and GPS-based event check-ins for transparent verification.
-- 🔐 **Secure & Scalable:** AES-256 encrypted, OAuth2-authenticated, and high concurrency support.
+Rural healthcare in India suffers from a severe shortage of specialists, diagnostics, and care infrastructure. **MediConnect** aims to empower NGO-run village clinics by digitally connecting them to verified city doctors, diagnostic labs, and medicine providers—delivering smart, affordable care powered by real-time consultations and minimal-data diagnostics.
 
 ---
 
-## Impact Areas
+## 🧠 Project Overview
 
-- ✅ Water Conservation
-- ✅ Climate Resilience
-- ✅ Early Warning Awareness
-- ✅ Youth Engagement for SDGs
-- ✅ ESG & BRSR Corporate Compliance
+**MediConnect** is a full-stack rural health-tech platform that acts as a digital bridge between villagers and qualified urban healthcare providers. It transforms basic patient data into actionable, AI-guided care flows—teleconsultations, prescriptions, lab referrals, and medicine ordering.
 
----
+### Built for low-resource environments:
 
-## User Roles
-
-| User        | Key Needs                                       |
-|-------------|-------------------------------------------------|
-| Students    | Recognition, internships, mentorship, upskilling|
-| NGOs        | Volunteer management, event visibility          |
-| Corporates  | Verified CSR metrics, Schedule VII compliance   |
-| Admin       | Platform health, analytics, content moderation  |
+- Telemedicine consultations  
+- Smart e-prescriptions  
+- Diagnostic lab referrals  
+- Jan Aushadhi–based medicine ordering  
+- Personalized diet and care plans  
+- Emergency escalation  
+- CSR health analytics dashboards
 
 ---
 
-## Tech Stack
+## 🧩 Core Features
 
-| Layer             | Technology                              |
-|------------------|------------------------------------------|
-| Frontend         | React.js, Tailwind CSS                   |
-| Backend Services | Supabase (Backend-as-a-Service)          |
-| ORM & DB Layer   | Prisma ORM with PostgreSQL (via Supabase)|
-| Authentication   | Supabase Auth (OAuth + Magic Links)      |
-| Hosting          | Supabase Hosting                         |
-| Realtime & APIs  | Supabase Realtime, Edge Functions        |
-| Deployment       | GitHub Actions (CI/CD)                   |
+### Real-Time Teleconsultation
+Secure video/audio consultations between patients and doctors, coordinated by NGO clinic staff.
 
----
+### Minimal-Data e-Prescription Engine
+Converts basic symptoms, vitals, and history into structured prescriptions and personalized care plans.
 
-## Use Case Scenarios
+### Smart Diagnostic Triaging
+AI models suggest relevant lab tests or specialist referrals based on symptom clustering and severity prioritization.
 
-1. **Student Volunteer Experience**
-   - Signup → Get matched to nearby events → Check-in via QR → Earn badges → Unlock internships.
-2. **NGO Event Management**
-   - Post event (e.g., Bhopal River Clean-up) → Attract matched volunteers → Track turnout + impact reports.
-3. **Corporate CSR Compliance**
-   - Monitor real-time CSR impact → Auto-generate reports for BRSR/ESG → Plan company-wide CSR Days.
+### Jan Aushadhi Medicine Ordering
+Integrated ordering from low-cost government pharmacies or verified local vendors.
 
----
+### Emergency Case Transfer
+Single-click escalation to nearby government facilities with digital referral documentation.
 
-## Future Scope
+### Health Data Tracker
+Maintains longitudinal care records for patients with minimal digital overhead.
 
-- 🤖 AI-based engagement recommendations
-- 🔗 Blockchain for verifiable social impact
-- 🎓 Credit-based rewards integrated with universities
-- 🗣️ Multilingual voice interfaces for rural communities
+### Role-Based Access Control
+User-specific permissions for:
+- NGO clinic staff
+- Doctors
+- Lab partners
+- CSR funders/admins
 
 ---
 
-## Team DropConnect
+## 👥 User Roles
 
-- **Debshata Choudhury** – Team Leader, Backend Developer  
-- **Niranjan Praveen** – Frontend Developer  
-- **Vaibhav Jain** – Frontend Developer  
-- **Abhishek Chaubey** – Backend Developer  
-- **Pratham Ranjan** – Backend Developer  
+- **Clinic Assistant** – Captures vitals, patient history, and connects with doctors  
+- **Doctor** – Conducts consults, approves prescriptions  
+- **Lab Partner** – Receives diagnostic referrals  
+- **CSR/Admin Partner** – Monitors care delivery and funds operations
 
 ---
 
-## Code Execution Instructions:
+## ☁️ AI & Cloud Integration
 
-### 1. Clone the Repository  
+- **LLM-Powered Prescriptions** – Leverages LLMs to recommend treatment based on input data  
+- **Symptom Triager** – Maps symptoms to diagnostic tests using AI clustering  
+- **Feedback Loop** – Continuously improves via real-world feedback and data outcomes
+
+---
+
+## 🧰 Technology Stack
+
+- **Frontend**: Next.js, Tailwind CSS, ShadCN UI, Three.js, Magic UI  
+- **Backend**: Flask  
+- **Database**: Supabase  
+- **APIs**: Gemini API  
+- **Authentication**: KindeAuth  
+- **Deployment**: Vercel (Frontend), Render (Backend)
+
+---
+
+## 💻 Code Execution Instructions
+
+### 1. Clone the Repository
+
 ```bash
-git https://github.com/Niranjan1Praveen/DropConnect.git
+git clone https://github.com/YourOrg/medi-connect.git
+cd medi-connect
 ```
 
-### 2. Install Frontend Dependencies  
+### 2. Install Frontend Dependencies
+
 ```bash
 cd client
 npm install
 ```
 
-### 3. Install Backend Dependencies  
+### 3. Install Backend Dependencies
+
 ```bash
 cd ../server
-pip install -r requirements.txt
+npm install
 ```
 
-### 4. Start Development Servers  
+### 4. Start Development Servers
 
-#### Frontend (Next.js)  
+#### Frontend
+
 ```bash
 cd client
 npm run dev
 ```
 
-#### Backend (FastAPI/Flask)
+#### Backend
 
 ```bash
-cd server
-cd CSR
-python app.py
+cd ../server
+npm start
 ```
 
-```bash
-cd server
-cd MAP
-python app.py
-```
+### 5. Access the Application
 
-```bash
-cd server
-cd NGO
-python app.py
-```
-
-### 5. Access the Application  
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open your browser and go to:  
+`http://localhost:3000`
 
 ---
 
-## License
+## 💰 Scalability & Business Model
 
-This project is developed as part of a mission-driven hackathon challenge to accelerate disaster resilience and water governance through civic tech collaboration.
+### CSR-Funded Healthcare Delivery
+
+- Leverages Section 135 of the Indian Companies Act for CSR healthcare projects  
+- Corporate partners fund digital infrastructure and subsidize care delivery
+
+### Revenue Streams
+
+- Consultation commissions  
+- Diagnostic test referral margins  
+- Affiliate income from medicine ordering  
+- NGO SaaS subscription fees  
+- CSR impact analytics dashboards
+
+---
+
+## 🧱 Modular Architecture
+
+- Offline-first design  
+- Multilingual UI (Hindi, English, Marathi)  
+- Seamless PHC/Government system integration  
+- Expandable to mental health, maternal care, chronic diseases
+
+---
+
+## 📌 Summary
+
+**MediConnect** delivers smart diagnostics and structured care to rural India by connecting NGO-operated clinics with urban healthcare providers. It maximizes clinical value through minimal data, AI-powered tools, and low-bandwidth infrastructure—creating a scalable, inclusive health ecosystem.
+
+Aligned with the **Hack4Health** theme of **Smart Diagnostics With Minimal Data**, MediConnect is built to democratize healthcare access for underserved populations.
+
+---
+
+**Let’s connect care—digitally.**
