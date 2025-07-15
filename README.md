@@ -26,6 +26,14 @@ Rural healthcare in India suffers from a severe shortage of specialists, diagnos
 
 **MediConnect** is a full-stack rural health-tech platform that acts as a digital bridge between villagers and qualified urban healthcare providers. It transforms basic patient data into actionable, AI-guided care flows—teleconsultations, prescriptions, lab referrals, and medicine ordering.
 
+![Landing Page Preview](./designs/landingPage.png)  
+![Documentation Preview](./designs/documentation.png)  
+![Live Conversation Preview](./designs/liveConversation.png)  
+![Digi Prescription Preview](./designs/digiPrescription.png)  
+![Fitness Generator Preview](./designs/fitnessGenerator.png)
+![Report Analyzer Preview](./designs/reportAnalyzer.png)
+![Search Prescription Preview](./designs/searchPrescription.png)
+
 ### Built for low-resource environments:
 
 - Telemedicine consultations  
