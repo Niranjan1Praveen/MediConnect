@@ -5,19 +5,20 @@ import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { Card } from "./card";
 
 const DropCard = ({ item }) => {
+  
   const getRegisterConfig = () => {
     switch(item.title) {
-      case "Volunteer":
+      case "Doctor":
         return {
           url: "/api/auth/creation?user_type=doctor",
-          text: "Register as Volunteer"
+          text: "Register as doctor"
         };
-      case "NGO / Organization":
+      case "NGO / Clinic":
         return {
           url: "/api/auth/creation?user_type=ngo",
-          text: "Register as Organization"
+          text: "Register as ngo"
         };
-      case "Corporates":
+      case "Corporate (CSR)":
         return {
           url: "/api/auth/creation?user_type=corporate",
           text: "Register as Corporate"
@@ -35,8 +36,8 @@ const DropCard = ({ item }) => {
   return (
     <Card className={"bg-transparent border-0"}>
       <div className="flex flex-col space-y-4 text-white p-4">
-        {/* <h2 className="text-primary-400 text-3xl font-bold">{item.cta}/<span className="text-xl text-white">{item.catchPhrase}</span></h2> */}
-        <h2 className="text-primary-400 text-3xl font-bold">{item.cta}</h2>
+        <h2 className="text-primary-400 text-3xl font-bold">{item.cta}/<span className="text-xl text-white">{item.catchPhrase}</span></h2>
+        {/* <h2 className="text-primary-400 text-3xl font-bold">{item.cta}</h2> */}
         <img
           src={item?.img ?? ""}
           className="w-full h-[300px] rounded-md"
@@ -49,7 +50,7 @@ const DropCard = ({ item }) => {
         </p>
         <RegisterLink postLoginRedirectURL={url}>
           <Button className="cursor-pointer w-full" variant={"outline"}>
-            {text}
+            Register Now
           </Button>
         </RegisterLink>
         <ul className="text-md text-white/80 mt-4 space-y-2">

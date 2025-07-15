@@ -10,7 +10,6 @@ datasource db {
 }
 
 enum Role {
-  DOCTOR
   NGO
   CORPORATE
 }
@@ -22,7 +21,7 @@ model User {
   lastName     String
   profileImage String
   createdAt    DateTime @default(now())
-  role         Role     @default(DOCTOR)
+  role         Role     @default(NGO)
 }
 
 model Consultation {

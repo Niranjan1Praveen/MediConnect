@@ -8,13 +8,13 @@ import { ShineBorder } from "@/components/magicui/shine-border";
 import { AuroraText } from "@/components/magicui/aurora-text";
 
 const features = [
-  "Jan Aushadhi Medicine Orders",
+  "Voice-Guided Symptom Input",
   "AI-Based Triage Assistant",
-  "Medical History Logs",
+  "Doctor Escalation Triggers",
   "Offline Sync Capability",
-  "CSR Compliance Analytics",
+  "CSR Impact Analytics",
   "Emergency Hospital Referrals",
-  "Diet & Exercise Recommendations",
+  "Jan Aushadhi Medicine Orders",
 ];
 
 export default function Features() {
@@ -37,8 +37,8 @@ export default function Features() {
           <FeatureCard
             title={"CSR Health Impact Dashboards"}
             description={
-              "Corporates can track consultations, medicine orders, and patient outreach across rural clinics—fulfilling CSR goals under Section 135."
-            }
+              "Corporates can monitor rural diagnostic usage, doctor escalations, and medicine access in real-time—supporting Section 135 CSR compliance with visual proof of impact."
+            }            
             className="md:col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">
@@ -54,10 +54,10 @@ export default function Features() {
 
           {/* Card-2 */}
           <FeatureCard
-            title={"Smart Prescription & Recommendations"}
+            title={"Smart Voice-to-Prescription System"}
             description={
-              "City doctors can auto-generate prescriptions, dietary advice, and follow-up care plans—based on vitals and patient history submitted by local clinic staff."
-            }
+              "Doctors receive structured symptoms and audio diagnostics from the field, enabling them to issue AI-assisted prescriptions, dietary guidance, and alerts with one click."
+            }                        
             className="md:col-span-2 lg:col-span-1"
           >
             <div className="relative aspect-video flex items-center justify-center overflow-hidden">
@@ -73,9 +73,9 @@ export default function Features() {
 
           {/* Card-3 */}
           <FeatureCard
-            title={"Clinic-to-Doctor Connect"}
+            title={"AI-Powered Clinic-to-Doctor Triage"}
             description={
-              "NGO clinics are digitally linked with verified city doctors for real-time teleconsultations, smart triage, and instant prescriptions—all in one place."
+              "Local clinics use voice to record symptoms and vitals—AI triages the case instantly, escalating to a verified doctor only when needed. No typing. No delay."
             }
             className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto"
           >

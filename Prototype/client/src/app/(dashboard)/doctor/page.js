@@ -202,7 +202,6 @@ export default function MediScribeDashboard() {
               
               <div className="relative backdrop-blur-xl bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-8">
-                  <TrendingUp className="w-8 h-8 text-emerald-400" />
                   <h2 className="text-2xl font-bold text-white">
                     Why Clinicians Choose{" "}
                     <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">

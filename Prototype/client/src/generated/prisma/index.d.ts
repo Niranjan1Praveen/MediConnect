@@ -34,7 +34,6 @@ export type Patient = $Result.DefaultSelection<Prisma.$PatientPayload>
  */
 export namespace $Enums {
   export const Role: {
-  DOCTOR: 'DOCTOR',
   NGO: 'NGO',
   CORPORATE: 'CORPORATE'
 };

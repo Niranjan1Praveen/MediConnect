@@ -15,7 +15,7 @@ const SignUpOptions = () => {
           <Tags title={"Sign Up Options"} />
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {signUpOptionsData.map((item) => (
             <BoxReveal key={item.id} boxColor="none">
               <DropCard item={item} />

@@ -4,7 +4,7 @@ import { useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `Millions in rural India still struggle to access basic healthcare — not due to lack of intent, but due to disconnected systems, unreachable doctors, and unaffordable treatment options.`;
+const text = `Millions in rural India still struggle to receive basic diagnosis — not because they don't seek help, but due to disconnected systems, unreachable doctors, and inaccessible tools.`;
 const words = text.split(" ");
 
 export default function Introduction() {
@@ -32,16 +32,17 @@ export default function Introduction() {
           </div>
           <div className="text-4xl md:text-5xl text-center font-medium mt-10">
             <span>
-              Rural healthcare needs a system that’s connected, affordable, and human.
+              Rural diagnosis needs to be voice-first, mobile-ready, and
+              AI-assisted.
             </span>{" "}
             <span className="text-white/15 leading-tight">
               {words.map((word, index) => {
                 const isVisible = index < currentWord;
                 const shouldHightlight =
-                  (isVisible &&
-                    (word.toLowerCase().includes("disconnected") ||
-                      word.toLowerCase().includes("unreachable") ||
-                      word.toLowerCase().includes("unaffordable")));
+                  isVisible &&
+                  (word.toLowerCase().includes("disconnected") ||
+                    word.toLowerCase().includes("unreachable") ||
+                    word.toLowerCase().includes("unaffordable"));
 
                 return (
                   <span
@@ -51,7 +52,7 @@ export default function Introduction() {
                       isVisible ? "text-white" : "text-white/15",
                       isVisible &&
                         shouldHightlight &&
-                        "text-red-500 italic transition",
+                        "text-red-500 italic transition"
                     )}
                   >
                     {word + " "}
@@ -60,7 +61,8 @@ export default function Introduction() {
               })}
             </span>
             <span className="text-primary-400 block mt-3">
-              That’s why we created MediConnect.
+              That’s why we built MediConnect — to enable smart diagnosis
+              without typing.
             </span>
           </div>
         </div>

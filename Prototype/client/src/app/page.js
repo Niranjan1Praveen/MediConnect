@@ -1,3 +1,4 @@
+"use client";
 import Features from "@/sections/Features";
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
@@ -7,6 +8,7 @@ import Navbar from "@/sections/Navbar";
 import React from "react";
 import SignUpOptions from "@/sections/SignupOptions";
 import { Particles } from "@/components/magicui/particles";
+import Faqs from "@/sections/Faqs";
 const Home = () => {
   return (
     <>
@@ -26,12 +28,14 @@ const Home = () => {
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <Features />
         <SignUpOptions />
+        <Faqs/>
         <Particles
           className="absolute inset-0 z-0"
           quantity={40}
           ease={90}
           refresh
         />
+
       </div>
       <Footer />
     </>

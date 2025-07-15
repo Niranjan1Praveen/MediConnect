@@ -26,7 +26,8 @@ export default function AppPrescription() {
     medications: "",
     dietaryPreferences: [],
   });
-
+  console.log(formData);
+  
   const [conversation, setConversation] = useState("");
   const [prescription, setPrescription] = useState("");
   const [isLoading, setIsLoading] = useState(true);

@@ -7,7 +7,8 @@ export async function GET(request) {
   const user = await getUser();
   const { searchParams } = new URL(request.url);
   const userType = searchParams.get("user_type");
-
+  console.log(userType);
+  
   if (!user || user == null || !user.id) {
     throw new Error("Something went wrong!");
   }
@@ -27,7 +28,7 @@ export async function GET(request) {
         email: user.email ?? "",
         profileImage:
           user.picture ?? `https://avatar.vercel.sh/${user.given_name}`,
-        role: userType?.toUpperCase() || "DOCTOR",
+        role: userType?.toUpperCase() || "NGO",
       },
     });
   }
@@ -35,17 +36,11 @@ export async function GET(request) {
   let redirectUrl;
 
   switch (userType) {
-    case "doctor":
-      redirectUrl = "http://localhost:3000/dashboard";
-      break;
-    case "corporate":
+    case 'corporate':
       redirectUrl = "http://127.0.0.1:9050/";
       break;
-    case "ngo":
-      redirectUrl = "http://127.0.0.1:8050/";
-      break;
     default:
-      redirectUrl = "http://localhost:3000/dashboard";
+      redirectUrl = "http://localhost:3000/doctor";
   }
 
   return NextResponse.redirect(redirectUrl);

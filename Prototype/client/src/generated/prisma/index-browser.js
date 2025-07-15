@@ -181,7 +181,6 @@ exports.Prisma.JsonNullValueFilter = {
   AnyNull: Prisma.AnyNull
 };
 exports.Role = exports.$Enums.Role = {
-  DOCTOR: 'DOCTOR',
   NGO: 'NGO',
   CORPORATE: 'CORPORATE'
 };

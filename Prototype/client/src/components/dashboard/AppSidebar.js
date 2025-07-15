@@ -77,13 +77,6 @@ const items = [
     description: "Find prescriptions",
     badge: null,
   },
-  {
-    title: "Report Analyser",
-    url: "http://127.0.0.1:5001",
-    icon: BarChart,
-    description: "Anayse reports",
-    badge: null,
-  },
 ];
   return (
     <Sidebar collapsible="icon">
@@ -105,9 +98,9 @@ const items = [
       </SidebarHeader>
       <hr />
       <SidebarContent>
-        {/* Volunteer */}
-        {user?.role.toLowerCase() === "doctor" && <SidebarGroup>
-          <SidebarGroupLabel>Volunteer</SidebarGroupLabel>
+        {/* NGO */}
+        {user?.role.toLowerCase() === "ngo" && <SidebarGroup>
+          <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu className="space-y-2">
               {items.map((item, index) => (
@@ -149,102 +142,6 @@ const items = [
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>}
-        {/* All Events */}
-        {user?.role.toLowerCase() === "organization" && <SidebarGroup>
-          <SidebarGroupLabel>Events</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href={"/dashboard/yourevents"}>
-                    <Calendar />
-                    <span>Your Events</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href="/dashboard/events">
-                    <Projector />
-                    See All Events
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href="/dashboard/events/new">
-                    <Plus />
-                    Add Event
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>}
-        {/* CSR */}
-        {user?.role.toLowerCase() === "corporate" && <SidebarGroup>
-          <SidebarGroupLabel>CSR</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href={"https://dropconnect-csr-dashboard.onrender.com/"}>
-                    <Handshake />
-                    <span>CSR Dashboard</span>
-                  </Link>
-                  {/* <Link href={"http://127.0.0.1:9050/"}>
-                    <Handshake />
-                    <span>CSR Dashboard</span>
-                  </Link> */}
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>}
-        {/* NGO */}
-        {user?.role.toLowerCase() === "organization" && <SidebarGroup>
-          <SidebarGroupLabel>NGO</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href={"https://dropconnect-impact-assessment-dashboard.onrender.com"}>
-                    <BarChart />
-                    <span>Impact Dashboard</span>
-                  </Link>
-                  {/* <Link href={"http://127.0.0.1:8050/"}>
-                    <BarChart />
-                    <span>Impact Dashboard</span>
-                  </Link> */}
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>}
-        {/* Region Suitability */}
-        {user?.role.toLowerCase() === "organization" && <SidebarGroup>
-          <SidebarGroupLabel>Region Suitability</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href={"https://dropconnect-region-suitability-map.onrender.com"}>
-                    <MapIcon />
-                    <span>View Map</span>
-                  </Link>
-                  {/* <Link href={"http://127.0.0.1:5000"}>
-                    <MapIcon />
-                    <span>View Map</span>
-                  </Link> */}
-                </SidebarMenuButton>
-              </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>}

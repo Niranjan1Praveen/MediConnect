@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="container relative">
         <div className="flex items-center justify-center">
           <div className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
-           🩺 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
+            🩺 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
             <AnimatedGradientText
               className="text-sm font-medium"
               speed={1}
@@ -50,7 +50,8 @@ export default function Hero() {
           </div>
         </div>
         <h1 className="text-5xl md:text-7xl font-medium text-center mt-6 max-w-6xl mx-auto leading-[1.15]">
-          Bring <strong
+          Bring{" "}
+          <strong
             className={`transition font-medium fade-up ${
               fade ? "fade-in" : "fade-out"
             }`}
@@ -63,9 +64,10 @@ export default function Hero() {
         </h1>
 
         <p className="text-center text-xl text-white/50 mt-8 max-w-4xl mx-auto leading-relaxed">
-          MediConnect digitally links rural NGO clinics with certified city doctors — 
-          enabling real-time consultations, smart prescriptions, affordable medicines, and emergency referrals. 
-          Built for impact. Powered by CSR. Delivered with care.
+          MediConnect is a mobile-first diagnostic assistant for rural clinics —
+          enabling voice-guided triage of wounds, skin conditions, cough (TB),
+          and tongue health with zero typing. Powered by Supabase and AI
+          triggers, with optional doctor escalation and real-time reporting.
         </p>
 
         <div className="flex mt-8 md:max-w-lg mx-auto items-center justify-center gap-5">
@@ -76,7 +78,7 @@ export default function Hero() {
             Explore Platform
           </RainbowButton>
           <RainbowButton className="text-white rounded-full p-5">
-            <a href="#signup">Join the Mission</a>
+            <a href="#signUpOptions">Join the Mission</a>
           </RainbowButton>
         </div>
       </div>
