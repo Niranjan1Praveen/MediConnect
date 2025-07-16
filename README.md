@@ -29,7 +29,7 @@ MediConnect is a full-stack rural health-tech platform that acts as a digital br
 
 ## 🧩 Core Features
 - **Real-Time Teleconsultation**  
-  ![Live Conversation Preview](designs/liveConversation.png)  
+  ![Live Conversation Preview](designs/aiAssistant.png)  
   - Secure video/audio consultations between patients and doctors, coordinated by NGO clinic staff, ensuring seamless communication even in low-bandwidth settings.
 
 - **Minimal-Data e-Prescription Engine**  
@@ -39,11 +39,9 @@ MediConnect is a full-stack rural health-tech platform that acts as a digital br
 - **Smart Diagnostic Triaging**  
   - AI models analyze symptom clusters and prioritize severity to suggest relevant lab tests or specialist referrals, optimizing resource use in rural clinics.
 
-- **Jan Aushadhi Medicine Ordering**  
+- **Jan Aushadhi Medicine Ordering** 
+![Buy Medicines Preview](designs/buyMedicines.png) 
   - Integrated ordering system connects clinics to low-cost government pharmacies or verified local vendors, ensuring affordable access to medicines.
-
-- **Emergency Case Transfer**  
-  - Single-click escalation to nearby government facilities with digital referral documentation for urgent cases, streamlining critical care transitions.
 
 - **Health Data Tracker**  
   - Maintains longitudinal care records for patients with minimal digital overhead, enabling continuity of care in resource-constrained settings.
@@ -62,7 +60,7 @@ MediConnect is a full-stack rural health-tech platform that acts as a digital br
   - Delete records as needed, with timestamps for record creation.
 
 - **Digital Prescription System**  
-  ![Digital Prescription Preview](designs/digitalPrescription.png)  
+  ![Digital Prescription Preview](designs/digiPrescription.png)  
   - Generate and manage digital prescriptions with patient and doctor details.  
   - Record medical assessments.  
   - Add new medications and save as PDF files.
