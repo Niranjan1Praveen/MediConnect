@@ -1,5 +1,5 @@
 # MediConnect – Rural Clinics Connected to Urban Care via Smart Telehealth Platform
-![Landing Page Preview](designs/landing-page.png)
+![Landing Page Preview](designs/landingPage.png)
 
 **Hackathon**: Hack4Health  
 **Team Name**: CODE4CHANGE  
@@ -29,13 +29,11 @@ MediConnect is a full-stack rural health-tech platform that acts as a digital br
 
 ## 🧩 Core Features
 - **Real-Time Teleconsultation**  
-  ![Live Conversation Preview](designs/live-conversation.png)  
+  ![Live Conversation Preview](designs/liveConversation.png)  
   - Secure video/audio consultations between patients and doctors, coordinated by NGO clinic staff, ensuring seamless communication even in low-bandwidth settings.
 
 - **Minimal-Data e-Prescription Engine**  
-  ![Digi Prescription Preview](designs/digi-prescription.png)  
-  ![Fitness Generator Preview](designs/fitness-generator.png)  
-  ![Search Prescription Preview](designs/search-prescription.png)  
+  ![Digi Prescription Preview](designs/digiPrescription.png)  
   - Converts basic symptoms, vitals, and patient history into structured prescriptions and personalized care plans, leveraging AI for accuracy and efficiency.
 
 - **Smart Diagnostic Triaging**  
@@ -58,24 +56,24 @@ MediConnect is a full-stack rural health-tech platform that acts as a digital br
     - **CSR/Admin Partners**: Monitor care delivery and fund operations via analytics dashboards.
 
 - **Patient Records Management**  
-  ![Patient Records Preview](designs/patient-records.png)  
+  ![Patient Records Preview](designs/patientRecords.png)  
   - Search and filter patient records by name.  
   - View detailed information (e.g., age, conditions, medications).  
   - Delete records as needed, with timestamps for record creation.
 
 - **Digital Prescription System**  
-  ![Digital Prescription Preview](designs/digital-prescription.png)  
+  ![Digital Prescription Preview](designs/digitalPrescription.png)  
   - Generate and manage digital prescriptions with patient and doctor details.  
   - Record medical assessments.  
   - Add new medications and save as PDF files.
 
 - **Fitness Plan Generator**  
-  ![Fitness Plan Preview](designs/fitness-plan.png)  
+  ![Fitness Plan Preview](designs/fitnessGenerator.png)  
   - Create personalized diet plans with specific meal timings and food recommendations.  
   - Generate exercise schedules tailored to individual needs.
 
 - **Live Conversation Capture**  
-  ![Live Conversation Capture Preview](designs/live-conversation-capture.png)  
+  ![Live Conversation Capture Preview](designs/liveConversation.png)  
   - Facilitate real-time doctor-patient dialogue with voice or text input.  
   - Support language selection and a "Start Now" feature for consultations.
 
