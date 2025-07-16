@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import AppTongueDisease from "@/components/dashboard/AppTongueDisease";
 import GLBModelViewer from "@/components/dashboard/GLBModelViewer";
+import AppTBDetector from "@/components/dashboard/AppTBDetector";
+import AppWoundDetection from "@/components/dashboard/AppWoundDetection";
 
 export default function Page() {
   const [selectedModel, setSelectedModel] = useState("null");
@@ -11,9 +13,9 @@ export default function Page() {
       case "model1":
         return <AppTongueDisease />;
       case "model2":
-        return <div className="text-white">Model-2 Component Goes Here</div>;
+        return <div className="text-white"><AppTBDetector/></div>;
       case "model3":
-        return <div className="text-white">Model-3 Component Goes Here</div>;
+        return <div className="text-white"><AppWoundDetection/></div>;
       default:
         return null;
     }
@@ -32,8 +34,8 @@ export default function Page() {
       >
         <option value="null">No Model Selected</option>
         <option value="model1">Model 1 - Tongue Disease</option>
-        <option value="model2">Model 2</option>
-        <option value="model3">Model 3</option>
+        <option value="model2">Model 2 - TB Detector</option>
+        <option value="model3">Model 3 - Wound Detection</option>
       </select>
 
       <div className="mt-6 w-full">{renderModel()}</div>

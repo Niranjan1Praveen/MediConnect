@@ -18,7 +18,7 @@ export default function GLBModelViewer({ url }) {
         <Suspense fallback={null}>
           <Model url={url} />
         </Suspense>
-        {/* <OrbitControls enableZoom={true} /> */}
+        <OrbitControls enableZoom={false} />
       </Canvas>
     </div>
   );

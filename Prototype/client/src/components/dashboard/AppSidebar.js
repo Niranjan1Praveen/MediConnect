@@ -17,6 +17,7 @@ import {
   Dumbbell,
   Search,
   FlaskConical,
+  Pill,
 } from "lucide-react";
 import {
   Sidebar,
@@ -51,11 +52,25 @@ const items = [
     badge: null,
   },
   {
+    title: "Diagnostic Assistant",
+    url: "/doctor/assistant",
+    icon: FlaskConical,
+    description: "Diagnosis using AI/ML",
+    badge: null,
+  },
+  {
     title: "Conversation",
     url: "/doctor/liveConversation",
     icon: Mic,
     description: "Real-time chat",
     badge: "New",
+  },
+  {
+    title: "Buy Medicines",
+    url: "/doctor/buyMedicines",
+    icon: Pill,
+    description: "Buy medicines in Real-time ",
+    badge: null,
   },
   {
     title: "Digital Prescription",
@@ -78,13 +93,7 @@ const items = [
     description: "Find prescriptions",
     badge: null,
   },
-  {
-    title: "Diagnostic Assistant",
-    url: "/doctor/assistant",
-    icon: FlaskConical,
-    description: "Diagnosis using AI/ML",
-    badge: null,
-  },
+  
 ];
   return (
     <Sidebar collapsible="icon">
