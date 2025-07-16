@@ -24,7 +24,7 @@ export default function Faqs() {
           <div className="relative">
             <Tags title={"Faqs"} />
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed py-4">
-              Everything you need to know about MediScribe's powerful AI-driven
+              Everything you need to know about MediScribes powerful AI-driven
               healthcare documentation platform
             </p>
           </div>

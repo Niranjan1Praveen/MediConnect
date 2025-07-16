@@ -456,7 +456,7 @@ export default function AppPrescription() {
               {/* Signature Section */}
               <Card className="backdrop-blur-xl bg-white/5 border-white/10 shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300">
                 <CardHeader className="border-b border-white/10">
-                  <CardTitle className="text-emerald-300">Doctor's Signature</CardTitle>
+                  <CardTitle className="text-emerald-300">Doctors Signature</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div className="no-print">
