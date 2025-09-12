@@ -173,7 +173,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/vaibhavjain/Desktop/Hack4Health/Prototype/client/src/generated/prisma",
+      "value": "C:\\Users\\nithi\\Desktop\\SIH2025\\MediConnect\\Prototype\\client\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -182,12 +182,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin-arm64",
+        "value": "windows",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/vaibhavjain/Desktop/Hack4Health/Prototype/client/prisma/schema.prisma",
+    "sourceFilePath": "C:\\Users\\nithi\\Desktop\\SIH2025\\MediConnect\\Prototype\\client\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -201,6 +201,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
