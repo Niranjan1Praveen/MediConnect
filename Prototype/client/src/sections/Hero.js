@@ -75,7 +75,7 @@ export default function Hero() {
             variant={"outline"}
             className="rounded-full text-black p-5"
           >
-            Explore Platform
+            <a href="#features">Explore Platform</a>
           </RainbowButton>
           <RainbowButton className="text-white rounded-full p-5">
             <a href="#signUpOptions">Join the Mission</a>
