@@ -125,16 +125,20 @@ Transparent system for CSR-backed rural micro-clinics and medicine distribution,
 
 git clone https://github.com/YourOrg/medi-connect.git
 cd medi-connect
+
 Frontend
 cd client
 npm install
 npm run dev
+
 Backend
 cd ../server
 npm install
 npm start
+
 Access at
 http://localhost:3000
+
 ## 📊 Slide 4: Feasibility, Viability, Challenges
 
 ### Feasibility
