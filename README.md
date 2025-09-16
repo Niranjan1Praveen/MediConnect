@@ -1,7 +1,7 @@
 # MediConnect – Rural Clinics Connected to Urban Care via Smart Telehealth Platform  
 ![Landing Page Preview](designs/landingPage.png)
 
-**Hackathon**: Smart India Hackathon  
+**Hackathon**: Top 50 in IIT Delhi Hack4Health Hackathon by Horiba  
 **Team Name**: CODE4CHANGE  
 
 ## 👥 Team Members
